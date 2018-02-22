@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rotacion de camara</title>
+
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      #canvasContainer{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+
+      }
+      #canvasContainer img{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        transform: scale(1.4);
+
+
+      }
+      #canvasContainer canvas{
+        z-index: 2;
+      }
+    </style>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+  </head>
+  <body>
+    <div id="canvasContainer">
+      <img class="backImage" src="img/space2.jpg" alt="">
+    </div>
+  </body>
+
+  <script type="text/javascript" src="js/code.js">
+
+  </script>
+</html>
